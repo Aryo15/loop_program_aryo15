@@ -1,40 +1,431 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Unreachable</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8d7da;
-            color: #721c24;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            border-radius: 5px;
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-        }
-        h1 {
-            font-size: 2em;
-            margin: 0;
-        }
-        p {
-            margin: 10px 0 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Server Unreachable</h1>
-        <p>We are currently unable to connect to the server. Please try again later.</p>
-    </div>
-</body>
-</html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="./img/ekaayam logo.png" type="image/x-icon">
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="styles_hidden.css">
+      <title>EKAAYAM | HOME</title>
+   </head>
+   <body oncontextmenu="return false;">
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class=""nav container>
+            <a href="index.html" class="nav__logo">
+                <img src="./img/ekaayam_new.png" alt=" company logo" class="company__logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="events.html" class="nav__link">Events</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blogs.html" class="nav__link">Blogs</a>
+                    </li>
+                </ul>
+
+                <!-- CLOSE BUTTON -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+
+            <!-- TOGGLE BUTTON -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="img/IMG3.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle">
+                        Welcome To
+                    </h3>
+
+                    <h1 class="home__title">
+                        EKAAYAM
+                    </h1>
+
+                    <p class="home__description">
+                        The One Dimension in Everything
+                    </p>
+
+                    <a href="events.html" class="button">
+                        Explore <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__cards grid">
+                    <article class="home__card">
+                        <img src="img/IMG10.webp" alt="home image" class="home__card-img">
+                        <h3 class="home__card-title">Event Listing</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+
+                    <article class="home__card">
+                        <img src="img/IMG9.webp" alt="home image" class="home__card-img">
+                        <h3 class="home__card-title">Marketing & Promotion</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+
+                    <article class="home__card">
+                        <img src="img/IMG11.webp" alt="home image" class="home__card-img">
+                        <h3 class="home__card-title">SaaS (Software as a Service)</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+
+                    <article class="home__card">
+                        <img src="img/IMG12.webp" alt="home image" class="home__card-img">
+                        <h3 class="home__card-title">Automation</h3>
+                        <div class="home__card-shadow"></div>
+                    </article>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title">
+                        What is <br>
+                        EKAAYAM?
+                    </h2>
+
+                    <p class="about__description">
+                        we're revolutionizing event management. 
+                        Users of our platform can easily list events and 
+                        sell tickets online. Our goal is to make event 
+                        administration and ticket verification processes 
+                        automated so that both organizers and guests have 
+                        a flawless experience. Regardless of the scale of 
+                        the event or the cost of the ticket, our goal is to 
+                        make event planning simple and successful for 
+                        everyone.
+                    </p>
+
+                    <a href="about.html" class="button">
+                        About Us <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="about__image">
+                    <img src="img/IMG5.png" alt="about image" class="about__img">
+                    <div class="about__shadow"></div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== POPULAR ====================-->
+         <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Host Your <br>
+                Event With Us
+            </h2>
+
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="img/IMG14.webp" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        <i class="ri-calendar-event-fill"></i>
+                        Comprehensive Event Planning Services
+                    </h2>
+
+                    <div class="popular__advantages aboutUs__description">
+                        <!-- <i class="ri-calendar-event-fill"></i> -->
+                        Our experienced team handles everything 
+                        from initial planning to post-event wrap-up, 
+                        ensuring a seamless experience.
+                    </div>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="img/IMG15.webp" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        <i class="ri-store-3-line"></i>
+                        Marketing and Promotion
+                    </h2>
+
+                    <div class="popular__advantages aboutUs__description">
+                        <!-- <i class="ri-store-3-line"></i> -->
+                        Assistance with event marketing, including 
+                        social media promotion and targeted advertising 
+                        to boost attendance.
+                    </div>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="img/IMG16.webp" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        <i class="ri-map-pin-line"></i>
+                        On-Site Support
+                    </h2>
+
+                    <div class="popular__advantages aboutUs__description">
+                        <!-- <i class="ri-map-pin-line"></i> -->
+                        Dedicated event coordinators and technical support 
+                        on-site to manage any issues that arise swiftly. <br> 
+                        Security services to ensure a safe and secure 
+                        environment for all attendees.
+                    </div>
+                </article>
+
+                <article class="popular__card">
+                    <div class="popular__image">
+                        <img src="img/IMG17.webp" alt="popular image" class="popular__img">
+                        <div class="popular__shadow"></div>
+                    </div>
+
+                    <h2 class="popular__title">
+                        <i class="ri-customer-service-2-line"></i>
+                        Customizable Experience
+                    </h2>
+
+                    <div class="popular__advantages aboutUs__description">
+                        <!-- <i class="ri-customer-service-2-line"></i> -->
+                        Personalized event experiences tailored to 
+                        reflect your brand and objectives. <br> 
+                        Thematic decor and branding options to create a 
+                        unique atmosphere for your event.
+                    </div>
+                </article>
+            </div>
+         </section>
+         
+         <!--==================== EXPLORE ====================-->
+         <section class="explore section" id="explore">
+            <div class="exlore__container">
+                <div class="explore__image">
+                    <img src="img/IMG4.jpg" alt="services image" class="explore__img">
+                    <div class="explore__shadow"></div>
+                </div>
+
+                <div class="explore__content container grid">
+                    <div class="explore__data">
+                        <h2 class="section__title">
+                            What we <br>
+                            Provide?
+                        </h2>
+
+                        <p class="explore__description">
+                            We specialize in turning your vision into reality 
+                            through meticulously planned and flawlessly 
+                            executed events. Whether you're hosting a corporate 
+                            conference, a lavish wedding, or a casual social 
+                            gathering, our dedicated team is here to provide 
+                            exceptional service and unparalleled attention to 
+                            detail. Here are the comprehensive services we offer 
+                            to ensure your event is a resounding success.
+                        </p>
+                    </div>
+
+                    <div class="explore__user">
+                        <img src="img/ekaayam_new.png" alt="explore image" class="explore__prefill">
+                        <span>
+                            Event Listing<br>
+                            Event Hosting<br>
+                            Event Management<br>
+                            Marketing & Promotion <br>
+                            SaaS (Software as a Service)<br>
+                            Sponsorship Availability<br>
+                            Automation<br>
+                        </span>
+                    </div>
+                </div>
+            </div>
+         </section>
+         
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container container grid">
+                <div class="join__data">
+                    <h2 class="section__title">
+                        Your Journey <br>
+                        Starts Here
+                    </h2>
+
+                    <p class="join__description">
+                        Get connected with us by letting us know your query.
+                    </p>
+
+                    <form action="" class="join__form">
+                        <input type="text" id="name" placeholder="Full Name" class="join__input" required>
+                        <input type="text" id="phone" placeholder="Phone Number" class="join__input" required>
+                        <input type="text" id="Email" placeholder="Email" class="join__input" required>
+                        <input type="text" id="Purpose" placeholder="Purpose" class="join__input" required>
+
+                        <button class="join__button button" id="Submit">
+                            Submit <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="join__image">
+                    <img src="img/IMG6.jpg" alt="" class="join__img">
+                    <div class="join__shadow"></div>
+                </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div>
+                    <a href="index.html" class="footer__logo">Explore</a>
+
+                    <p class="footer__description">
+                        Contact us and explore <br>
+                        the world of technology.
+                    </p>
+                </div>
+
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">About</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="about.html" class="footer__link">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">News & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">History</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Support</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="pp.html" class="footer__link">Privacy Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="rp.html" class="footer__link">Refund Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="tnc.html" class="footer__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="tel:+916371698172" class="footer__link">Call Center</a>
+                            </li>
+
+                            <li>
+                                <a href="tel:+916371698172" class="footer__link">Support Center</a>
+                            </li>
+
+                            <li>
+                                <a href="tel:+916371698172" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__group">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </div>
+
+                <span class="footer__copy">
+                    &#169; Copyright EKAAYAM. All rights reserved. 2024
+                </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+
+      <!--=============== FORM FILL ===============-->
+      <script src="Event_Queries.js"></script>
+   </body>
+   </html>
